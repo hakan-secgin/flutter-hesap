@@ -1,27 +1,19 @@
-```
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Editors
-.vscode/
-.idea/
-
+```gitignore
 # Dependencies
-.venv/
-venv/
 node_modules/
 
-# Build artifacts
-dist/
-build/
-target/
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
 
 # Python
 __pycache__/
@@ -29,27 +21,38 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-*.so
-
-# Compiled files
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.a
-*.out
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
-
-# Testing
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage*
+.nox/
 .pytest_cache/
 .mypy_cache/
 
-# System
+# Build artifacts
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Testing
+.tests/
+test-results/
+
+# CI/CD
+.github/
+!.github/workflows/
 ```
